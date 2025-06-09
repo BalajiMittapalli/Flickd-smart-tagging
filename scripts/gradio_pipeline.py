@@ -74,13 +74,14 @@ async def process_video(video_file, caption, hashtags=None, output_file=None):
             }
             for match in matches_data.get("products", []):
                 match_type = match.get("match_label", "").lower().replace(" match", "")
-                if match_type == "similar":
+                confidence = match.get("confidence", 0.0)
+                if match_type == "similar" and confidence >= 0.75:
                     product = {
                         "type": match.get("type", ""),
                         "color": match.get("color", ""),
                         "match_type": match_type,
                         "matched_product_id": match.get("matched_product_id", ""),
-                        "confidence": match.get("confidence", 0.0)
+                        "confidence": confidence
                     }
                     final_output["products"].append(product)
             return final_output
@@ -135,13 +136,14 @@ async def process_video(video_file, caption, hashtags=None, output_file=None):
         }
         for match in matches_data.get("products", []):
             match_type = match.get("match_label", "").lower().replace(" match", "")
-            if match_type == "similar":
+            confidence = match.get("confidence", 0.0)
+            if match_type == "similar" and confidence >= 0.75:
                 product = {
                     "type": match.get("type", ""),
                     "color": match.get("color", ""),
                     "match_type": match_type,
                     "matched_product_id": match.get("matched_product_id", ""),
-                    "confidence": match.get("confidence", 0.0)
+                    "confidence": confidence
                 }
                 final_output["products"].append(product)
         return final_output
@@ -161,4 +163,4 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    demo.launch() 
+    demo.launch()
