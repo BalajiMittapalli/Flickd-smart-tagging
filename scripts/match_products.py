@@ -29,8 +29,8 @@ type_strings = {
 }
 
 SIMILARITY_THRESHOLDS = {
-    'exact': 0.80,
-    'similar': 0.65
+    'exact': 0.70,
+    'similar': 0.50
 }
 
 logging.basicConfig(
@@ -234,6 +234,7 @@ class ProductMatcher:
             # Convert dictionary to list of matches
             matches = list(best_matches.values())
             
+            # Save matches to file
             out = {
                 'video_id': Path(detections_path).stem,
                 'products': matches,
@@ -242,6 +243,7 @@ class ProductMatcher:
             with open(output_path, 'w') as f:
                 json.dump(out, f, indent=2)
             logger.info(f"Saved {len(matches)} unique matches to {output_path}")
+            return matches
         except Exception as e:
             logger.error(f"Failed to match products: {e}")
             raise ProductMatchingError(f"Product matching failed: {e}")

@@ -72,10 +72,22 @@ class FashionDetector:
     def process_frames(self, frames_path, output_path):
         logger.info(f"Processing frames from {frames_path}")
         all_detections = []
-        if os.path.isdir(frames_path):
-            frame_files = [f for f in os.listdir(frames_path) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
-            for frame_file in tqdm(frame_files, desc="Processing frames"):
-                frame_path = os.path.join(frames_path, frame_file)
+        
+        # Ensure frames_path is a directory
+        if not os.path.isdir(frames_path):
+            raise ValueError(f"Expected a directory of frames, got: {frames_path}")
+            
+        # Get all image files in the directory
+        frame_files = [f for f in os.listdir(frames_path) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+        if not frame_files:
+            raise ValueError(f"No image files found in {frames_path}")
+            
+        logger.info(f"Found {len(frame_files)} frames to process")
+        
+        # Process each frame
+        for frame_file in tqdm(frame_files, desc="Processing frames"):
+            frame_path = os.path.join(frames_path, frame_file)
+            try:
                 frame_detections = self.detect_frame(frame_path)
                 if frame_detections:
                     frame_data = {
@@ -84,15 +96,14 @@ class FashionDetector:
                         "colors": self.extract_dominant_colors(frame_path)
                     }
                     all_detections.append(frame_data)
-        else:
-            frame_detections = self.detect_frame(frames_path)
-            if frame_detections:
-                frame_data = {
-                    "frame": os.path.basename(frames_path),
-                    "detections": frame_detections,
-                    "colors": self.extract_dominant_colors(frames_path)
-                }
-                all_detections.append(frame_data)
+            except Exception as e:
+                logger.error(f"Error processing frame {frame_file}: {str(e)}")
+                continue
+                
+        if not all_detections:
+            raise ValueError("No frames were successfully processed")
+            
+        # Save results
         output = {
             "total_frames": len(all_detections),
             "total_detections": sum(len(d["detections"]) for d in all_detections),
@@ -100,9 +111,15 @@ class FashionDetector:
             "classes": FASHION_CLASSES,
             "frames": all_detections
         }
+        
+        # Ensure output directory exists
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        
         with open(output_path, 'w') as f:
             json.dump(output, f, indent=2)
+            
         logger.info(f"Saved {len(all_detections)} frames with detections to {output_path}")
+        return output
 
 def process_video_frames(frames_dir: str, output_path: str) -> None:
     """

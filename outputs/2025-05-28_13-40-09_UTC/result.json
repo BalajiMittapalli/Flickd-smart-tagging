@@ -1,0 +1,59 @@
+{
+  "video_id": "2025-05-28_13-40-09_UTC",
+  "vibes": [
+    "Coquette",
+    "Party Glam",
+    "Streetcore"
+  ],
+  "products": [
+    {
+      "type": "dress",
+      "color": "#524d3b",
+      "match_type": "exact",
+      "matched_product_id": "17164",
+      "confidence": 0.7704570293426514
+    },
+    {
+      "type": "dress",
+      "color": "#53503e",
+      "match_type": "exact",
+      "matched_product_id": "16970",
+      "confidence": 0.7796761989593506
+    },
+    {
+      "type": "skirt",
+      "color": "#54503f",
+      "match_type": "exact",
+      "matched_product_id": "42070",
+      "confidence": 0.7558994293212891
+    },
+    {
+      "type": "skirt",
+      "color": "#54503f",
+      "match_type": "exact",
+      "matched_product_id": "17074",
+      "confidence": 0.7741963863372803
+    },
+    {
+      "type": "dress",
+      "color": "#5d5449",
+      "match_type": "exact",
+      "matched_product_id": "17073",
+      "confidence": 0.7734448909759521
+    },
+    {
+      "type": "skirt",
+      "color": "#524d3b",
+      "match_type": "exact",
+      "matched_product_id": "118452",
+      "confidence": 0.7585981488227844
+    },
+    {
+      "type": "neckline",
+      "color": "#827765",
+      "match_type": "exact",
+      "matched_product_id": "17069",
+      "confidence": 0.7508928775787354
+    }
+  ]
+}
