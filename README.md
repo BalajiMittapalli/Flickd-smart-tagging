@@ -183,10 +183,4 @@ The scripts in the `scripts/` directory can be run for specific tasks. Most of t
 7.  **Results Aggregation:** Detected products and classified vibes are combined into a structured JSON response.
 8.  **Cleanup:** Temporary video and frame files are removed.
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## License
-
-(Specify your project's license here, e.g., MIT, Apache 2.0. If not specified, it's typically proprietary.)
