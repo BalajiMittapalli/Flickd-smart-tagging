@@ -25,38 +25,26 @@ def process_all_videos(input_dir="outputs", output_dir="output1"):
         try:
             print(f"\nProcessing video: {video_dir}")
             
-            # Create subdirectory for this video
-            video_output_dir = os.path.join(output_dir, video_dir)
-            os.makedirs(video_output_dir, exist_ok=True)
+            # Find result.json
+            result_file = os.path.join(input_dir, video_dir, "result.json")
             
-            # Find vibes.json and matched_products.json
-            vibes_file = os.path.join(input_dir, video_dir, "vibes.json")
-            matches_file = os.path.join(input_dir, video_dir, "matched_products.json")
-            
-            if not os.path.exists(vibes_file) or not os.path.exists(matches_file):
-                print(f"Missing required files for {video_dir}, skipping...")
+            if not os.path.exists(result_file):
+                print(f"Missing result.json for {video_dir}, skipping...")
                 continue
             
-            # Load vibes and matches data
-            with open(vibes_file, 'r') as f:
-                vibes_data = json.load(f)
-            
-            with open(matches_file, 'r') as f:
-                matches_data = json.load(f)
+            # Load result data
+            with open(result_file, 'r') as f:
+                result_data = json.load(f)
             
             # Create final output
             final_output = {
                 "video_id": video_dir,
-                "vibes": vibes_data.get("vibes", []),
+                "vibes": result_data.get("vibes", []),
                 "products": []
             }
             
             # Process matches
-            products_list = []
-            if isinstance(matches_data, list):
-                products_list = matches_data
-            elif isinstance(matches_data, dict) and "products" in matches_data:
-                products_list = matches_data["products"]
+            products_list = result_data.get("products", [])
             
             print(f"Found {len(products_list)} products in matches")
             for match in products_list:
@@ -79,16 +67,12 @@ def process_all_videos(input_dir="outputs", output_dir="output1"):
             
             print(f"Added {len(final_output['products'])} products to final output")
             
-            # Save the result
-            output_file = os.path.join(video_output_dir, "result.json")
+            # Save the result directly in output folder with video name
+            output_file = os.path.join(output_dir, f"{video_dir}.json")
             with open(output_file, 'w') as f:
                 json.dump(final_output, f, indent=2)
             
             print(f"Saved result to {output_file}")
-            
-            # Copy original files for reference
-            shutil.copy2(vibes_file, os.path.join(video_output_dir, "vibes.json"))
-            shutil.copy2(matches_file, os.path.join(video_output_dir, "matched_products.json"))
             
         except Exception as e:
             print(f"Error processing {video_dir}: {str(e)}")

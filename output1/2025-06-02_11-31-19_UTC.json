@@ -1,0 +1,332 @@
+{
+  "video_id": "2025-06-02_11-31-19_UTC",
+  "vibes": [
+    "Party Glam",
+    "Clean Girl",
+    "Boho"
+  ],
+  "products": [
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#3c3c45",
+      "match_type": "",
+      "matched_product_id": "17164",
+      "confidence": 0.794384241104126
+    },
+    {
+      "type": "shirt, blouse",
+      "color": "#364b5a",
+      "match_type": "",
+      "matched_product_id": "14981",
+      "confidence": 0.777391254901886
+    },
+    {
+      "type": "neckline",
+      "color": "#a0897b",
+      "match_type": "",
+      "matched_product_id": "15341",
+      "confidence": 0.7738800048828125
+    },
+    {
+      "type": "sleeve",
+      "color": "#3c4d59",
+      "match_type": "",
+      "matched_product_id": "15277",
+      "confidence": 0.7522366046905518
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#917167",
+      "match_type": "",
+      "matched_product_id": "42069",
+      "confidence": 0.7898193597793579
+    },
+    {
+      "type": "dress",
+      "color": "#595153",
+      "match_type": "",
+      "matched_product_id": "14977",
+      "confidence": 0.7935070991516113
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#42424c",
+      "match_type": "",
+      "matched_product_id": "15395",
+      "confidence": 0.7813316583633423
+    },
+    {
+      "type": "skirt",
+      "color": "#ab8777",
+      "match_type": "",
+      "matched_product_id": "17074",
+      "confidence": 0.7630209922790527
+    },
+    {
+      "type": "shorts",
+      "color": "#ba9b8e",
+      "match_type": "",
+      "matched_product_id": "42070",
+      "confidence": 0.7615013122558594
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#917167",
+      "match_type": "",
+      "matched_product_id": "15346",
+      "confidence": 0.7613159418106079
+    },
+    {
+      "type": "skirt",
+      "color": "#324051",
+      "match_type": "",
+      "matched_product_id": "16694",
+      "confidence": 0.7886547446250916
+    },
+    {
+      "type": "dress",
+      "color": "#314050",
+      "match_type": "",
+      "matched_product_id": "42075",
+      "confidence": 0.7819523811340332
+    },
+    {
+      "type": "dress",
+      "color": "#324050",
+      "match_type": "",
+      "matched_product_id": "16752",
+      "confidence": 0.7751708626747131
+    },
+    {
+      "type": "tights, stockings",
+      "color": "#604e4b",
+      "match_type": "",
+      "matched_product_id": "15879",
+      "confidence": 0.781408429145813
+    },
+    {
+      "type": "sleeve",
+      "color": "#3b4d5a",
+      "match_type": "",
+      "matched_product_id": "14999",
+      "confidence": 0.7663730382919312
+    },
+    {
+      "type": "dress",
+      "color": "#a5908d",
+      "match_type": "",
+      "matched_product_id": "16867",
+      "confidence": 0.7612060904502869
+    },
+    {
+      "type": "skirt",
+      "color": "#595152",
+      "match_type": "",
+      "matched_product_id": "17081",
+      "confidence": 0.7885429859161377
+    },
+    {
+      "type": "shoe",
+      "color": "#2c3d4d",
+      "match_type": "",
+      "matched_product_id": "17069",
+      "confidence": 0.758082926273346
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#917167",
+      "match_type": "",
+      "matched_product_id": "15318",
+      "confidence": 0.780178427696228
+    },
+    {
+      "type": "skirt",
+      "color": "#2b3c4e",
+      "match_type": "",
+      "matched_product_id": "15727",
+      "confidence": 0.7532801628112793
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#404149",
+      "match_type": "",
+      "matched_product_id": "15901",
+      "confidence": 0.7924745678901672
+    },
+    {
+      "type": "dress",
+      "color": "#ad8878",
+      "match_type": "",
+      "matched_product_id": "17336",
+      "confidence": 0.7755621671676636
+    },
+    {
+      "type": "dress",
+      "color": "#314050",
+      "match_type": "",
+      "matched_product_id": "16555",
+      "confidence": 0.8004465103149414
+    },
+    {
+      "type": "skirt",
+      "color": "#2c3c4d",
+      "match_type": "",
+      "matched_product_id": "16584",
+      "confidence": 0.7550233602523804
+    },
+    {
+      "type": "dress",
+      "color": "#324051",
+      "match_type": "",
+      "matched_product_id": "15424",
+      "confidence": 0.7554004192352295
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#a88473",
+      "match_type": "",
+      "matched_product_id": "15215",
+      "confidence": 0.8051867485046387
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#93756c",
+      "match_type": "",
+      "matched_product_id": "15541",
+      "confidence": 0.7675632238388062
+    },
+    {
+      "type": "skirt",
+      "color": "#585153",
+      "match_type": "",
+      "matched_product_id": "42068",
+      "confidence": 0.8091514706611633
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#b99a8d",
+      "match_type": "",
+      "matched_product_id": "16066",
+      "confidence": 0.7596484422683716
+    },
+    {
+      "type": "dress",
+      "color": "#534d4f",
+      "match_type": "",
+      "matched_product_id": "15358",
+      "confidence": 0.7510027289390564
+    },
+    {
+      "type": "dress",
+      "color": "#344050",
+      "match_type": "",
+      "matched_product_id": "16125",
+      "confidence": 0.7540233731269836
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#324050",
+      "match_type": "",
+      "matched_product_id": "16090",
+      "confidence": 0.768867015838623
+    },
+    {
+      "type": "dress",
+      "color": "#585152",
+      "match_type": "",
+      "matched_product_id": "15331",
+      "confidence": 0.7713862657546997
+    },
+    {
+      "type": "sleeve",
+      "color": "#3c4d59",
+      "match_type": "",
+      "matched_product_id": "15226",
+      "confidence": 0.779179573059082
+    },
+    {
+      "type": "shirt, blouse",
+      "color": "#3c4a55",
+      "match_type": "",
+      "matched_product_id": "97543",
+      "confidence": 0.7693617939949036
+    },
+    {
+      "type": "sleeve",
+      "color": "#3c4c59",
+      "match_type": "",
+      "matched_product_id": "15337",
+      "confidence": 0.7794142961502075
+    },
+    {
+      "type": "shirt, blouse",
+      "color": "#3c4d5a",
+      "match_type": "",
+      "matched_product_id": "97544",
+      "confidence": 0.7543975114822388
+    },
+    {
+      "type": "shirt, blouse",
+      "color": "#3c4c59",
+      "match_type": "",
+      "matched_product_id": "15651",
+      "confidence": 0.7894120216369629
+    },
+    {
+      "type": "sleeve",
+      "color": "#3b4d5a",
+      "match_type": "",
+      "matched_product_id": "16700",
+      "confidence": 0.7819250822067261
+    },
+    {
+      "type": "dress",
+      "color": "#364b5a",
+      "match_type": "",
+      "matched_product_id": "42061",
+      "confidence": 0.7549643516540527
+    },
+    {
+      "type": "sleeve",
+      "color": "#364b5a",
+      "match_type": "",
+      "matched_product_id": "17161",
+      "confidence": 0.7779067754745483
+    },
+    {
+      "type": "dress",
+      "color": "#a48c7f",
+      "match_type": "",
+      "matched_product_id": "16118",
+      "confidence": 0.7515972852706909
+    },
+    {
+      "type": "dress",
+      "color": "#b09886",
+      "match_type": "",
+      "matched_product_id": "17237",
+      "confidence": 0.7540503144264221
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#927068",
+      "match_type": "",
+      "matched_product_id": "15293",
+      "confidence": 0.7723406553268433
+    },
+    {
+      "type": "dress",
+      "color": "#a7938f",
+      "match_type": "",
+      "matched_product_id": "42029",
+      "confidence": 0.7756519913673401
+    },
+    {
+      "type": "dress",
+      "color": "#4a4648",
+      "match_type": "",
+      "matched_product_id": "15373",
+      "confidence": 0.7516160011291504
+    }
+  ]
+}

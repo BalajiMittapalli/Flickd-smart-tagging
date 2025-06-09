@@ -1,0 +1,73 @@
+{
+  "video_id": "2025-05-27_13-46-16_UTC",
+  "vibes": [
+    "Cottagecore",
+    "Coquette",
+    "Streetcore"
+  ],
+  "products": [
+    {
+      "type": "dress",
+      "color": "#40362b",
+      "match_type": "",
+      "matched_product_id": "15188",
+      "confidence": 0.7660287618637085
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#2a2224",
+      "match_type": "",
+      "matched_product_id": "15346",
+      "confidence": 0.7797327041625977
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#2a2224",
+      "match_type": "",
+      "matched_product_id": "16694",
+      "confidence": 0.794586718082428
+    },
+    {
+      "type": "neckline",
+      "color": "#2a2224",
+      "match_type": "",
+      "matched_product_id": "16752",
+      "confidence": 0.7945630550384521
+    },
+    {
+      "type": "pants",
+      "color": "#3c3226",
+      "match_type": "",
+      "matched_product_id": "15879",
+      "confidence": 0.8035667538642883
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#312729",
+      "match_type": "",
+      "matched_product_id": "16584",
+      "confidence": 0.789111316204071
+    },
+    {
+      "type": "skirt",
+      "color": "#2a2224",
+      "match_type": "",
+      "matched_product_id": "16113",
+      "confidence": 0.7790939807891846
+    },
+    {
+      "type": "top, t-shirt, sweatshirt",
+      "color": "#2a2225",
+      "match_type": "",
+      "matched_product_id": "17132",
+      "confidence": 0.7778418064117432
+    },
+    {
+      "type": "dress",
+      "color": "#2a2225",
+      "match_type": "",
+      "matched_product_id": "42075",
+      "confidence": 0.7818484902381897
+    }
+  ]
+}
